@@ -1,0 +1,32 @@
+{% extends "C:/Users/Shubham/addit/home/templates/home/header.html"%}
+
+{% block content %}
+
+<div class="title"> Welcome to addit</div>
+
+<div>
+    <p>THis is new</p>
+</div>
+
+<div class="row" style="width: 33%; margin: auto">
+    
+    <div class="col-md-2" style="margin: auto" >
+        <a href="{% url 'login' %}" style="width: inherit; background: #3498DB; padding: 10px; color: white" >Login</a>
+    </div>
+
+    <div class="col-md-2" style="margin: auto">
+        <input type="submit"   value="Sign Up">
+    </div>
+    </div> 
+
+<div class="row"style="margin: auto; height: 200px; border:2px solid black; width: 50%">
+    {% for num in number %}
+        {{num}}
+    {% endfor %}
+    
+</div>
+<div class="row">
+    <button type="submit" class="buttons">Create New Post</button>
+</div>
+
+{% endblock %}

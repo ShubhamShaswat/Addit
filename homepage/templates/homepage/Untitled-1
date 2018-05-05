@@ -1,0 +1,17 @@
+{% extends "home/header.html"%}
+
+{% block content %}
+
+<div class="title"> Welcome to addit</div>
+
+<div>
+</div>
+
+<div class="">
+    <a href link = "http://127.0.0.1:8000/home/login">Login</a>
+</div>
+<div>
+  {% include "home/includes/main.html" %}
+</div>
+
+{% endblock %}
